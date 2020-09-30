@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF04F4F82520C8130055DBEF /* DataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF04F4F72520C8130055DBEF /* DataStorage.swift */; };
 		FF1AB685250FB64600F7F3AE /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1AB684250FB64600F7F3AE /* SecondViewController.swift */; };
 		FF1AB687250FC9E200F7F3AE /* UIButton+TitleShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1AB686250FC9E200F7F3AE /* UIButton+TitleShadow.swift */; };
 		FF3270322511F54800E90CB1 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3270302511F54800E90CB1 /* CollectionViewCell.swift */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FF04F4F72520C8130055DBEF /* DataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStorage.swift; sourceTree = "<group>"; };
 		FF1AB684250FB64600F7F3AE /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		FF1AB686250FC9E200F7F3AE /* UIButton+TitleShadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+TitleShadow.swift"; sourceTree = "<group>"; };
 		FF3270302511F54800E90CB1 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
@@ -89,6 +91,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FF04F4FC2520CA570055DBEF /* DataStorage */ = {
+			isa = PBXGroup;
+			children = (
+				FF04F4F72520C8130055DBEF /* DataStorage.swift */,
+			);
+			path = DataStorage;
+			sourceTree = "<group>";
+		};
 		FF1AB688250FC9EE00F7F3AE /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +171,7 @@
 				FFE420DA250BBA620073515C /* AppDelegate.swift */,
 				FFE420DC250BBA620073515C /* SceneDelegate.swift */,
 				FFE420EB250BBA640073515C /* Info.plist */,
+				FF04F4FC2520CA570055DBEF /* DataStorage */,
 				FF1AB688250FC9EE00F7F3AE /* Extensions */,
 				FF86CCE9251016D900C3FE9F /* Models */,
 				FF86CCE3251006FC00C3FE9F /* View */,
@@ -319,6 +330,7 @@
 				FF86CCEB2510E78000C3FE9F /* FilmCellSettings.swift in Sources */,
 				FFE420DB250BBA620073515C /* AppDelegate.swift in Sources */,
 				FF1AB685250FB64600F7F3AE /* SecondViewController.swift in Sources */,
+				FF04F4F82520C8130055DBEF /* DataStorage.swift in Sources */,
 				FF1AB687250FC9E200F7F3AE /* UIButton+TitleShadow.swift in Sources */,
 				FFE420DD250BBA620073515C /* SceneDelegate.swift in Sources */,
 			);

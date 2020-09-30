@@ -43,7 +43,6 @@ class SecondViewController: UIViewController {
     fileprivate func backBttnSettings() {
         let back = UIImage(named: "item")?.withRenderingMode(.alwaysOriginal)
         navigationController?.navigationBar.barTintColor = UIColor.black
-        
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: back, style:.plain, target: self, action: #selector(handlePop))
     }
     
@@ -85,8 +84,6 @@ extension SecondViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "myCell", for: indexPath) as! CollectionViewCell
         let movie = model[indexPath.row]
-        
-        
         cell.starImageViewOutlet.image = UIImage(named: "goldStar")
         cell.ratingLabelOutlet.text = movie.ratingLabel
         cell.filmNameLabelOutlet.text = movie.title
@@ -95,7 +92,6 @@ extension SecondViewController: UICollectionViewDataSource {
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
         let controller = DetailViewController()
         let movie = model[indexPath.row]
         controller.setModel(model: movie)
