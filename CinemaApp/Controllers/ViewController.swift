@@ -27,7 +27,7 @@ class ViewController: UIViewController {
         filmsButton.addBorderAndShadowToTitle()
         serialsButton.addBorderAndShadowToTitle()
         cartoonsButton.addBorderAndShadowToTitle()
-    }
+    }   
     
     @IBAction func filmsButtonAction(_ sender: Any) {
         guard let controller = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "secondVC") as? SecondViewController else { return }
