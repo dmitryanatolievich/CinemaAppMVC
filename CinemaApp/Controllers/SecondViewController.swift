@@ -20,12 +20,6 @@ class SecondViewController: UIViewController {
         genreLabelSettings()
     }
     
-    @IBAction func watchButtonAction(_ sender: Any) {
-        if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "DetailViewController") as? DetailViewController {
-            navigationController?.pushViewController(vc, animated: true)
-        }
-    }
-    
     fileprivate func genreLabelSettings() {
         self.genreLabel.text = titleText
         self.genreLabel.textColor = .white
@@ -45,6 +39,9 @@ class SecondViewController: UIViewController {
         navigationController?.navigationBar.barTintColor = UIColor.black
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: back, style:.plain, target: self, action: #selector(handlePop))
     }
+    @objc func handlePop() {
+            self.navigationController?.popViewController(animated: true)
+        }
     
     private func setupCollectionView() {
         collectionView.delegate = self
@@ -52,11 +49,7 @@ class SecondViewController: UIViewController {
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "secondBackground")!)
         backBttnSettings()
     }
-    
-    @objc func handlePop() {
-        self.navigationController?.popViewController(animated: true)
-    }
-    
+
     private func setupCollectionViewItemSize() {
         if collectionViewFlowLayout == nil {
             let lineSpacing:CGFloat = 5
@@ -81,6 +74,7 @@ extension SecondViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return model.count
     }
+    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "myCell", for: indexPath) as! CollectionViewCell
         let movie = model[indexPath.row]
@@ -89,11 +83,31 @@ extension SecondViewController: UICollectionViewDataSource {
         cell.filmNameLabelOutlet.text = movie.title
         cell.configCellElements()
         cell.genreImageView.image = UIImage(named: movie.imageName)
+        watchTrailer(cell, row: indexPath.row)
         return cell
     }
+    
+    func watchTrailer(_ event: CollectionViewCell?, row: Int) {
+        event?.watchTrailerDidTapped = {[weak self ] in
+            guard let self = self else { return }
+            self.watchTrailerController(row)
+        }
+    }
+    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        watchDetails(indexPath.row)
+    }
+    
+    private func watchTrailerController(_ row: Int) {
+        guard let controller = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "trailerVC") as? TrailerViewController else { return }
+        let movie = model[row]
+        controller.setModel(model: movie)
+        self.navigationController?.pushViewController(controller, animated: true)
+    }
+    
+    private func watchDetails(_ row: Int) {
         let controller = DetailViewController()
-        let movie = model[indexPath.row]
+        let movie = model[row]
         controller.setModel(model: movie)
         self.navigationController!.pushViewController(controller, animated: true)
     }

@@ -112,6 +112,9 @@
                                     <state key="normal" title="Button">
                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </state>
+                                    <connections>
+                                        <action selector="watchTrailerBttnAction:" destination="-1" eventType="touchUpInside" id="nVz-Dn-SEL"/>
+                                    </connections>
                                 </button>
                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="hje-IX-7VI" userLabel="fiveStarsStackView">
                                     <rect key="frame" x="107" y="613.5" width="106" height="25"/>

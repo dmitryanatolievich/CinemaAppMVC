@@ -9,6 +9,7 @@
 import UIKit
 class DetailViewController: UIViewController {
     var model: MovieModel?
+    
     @IBOutlet var detailScrollView: UIScrollView!
     @IBOutlet var detailView: UIView!
     @IBOutlet var filmNameLabel: UILabel!
@@ -40,6 +41,7 @@ class DetailViewController: UIViewController {
         labelsSettings()
         detailView.backgroundColor = UIColor.clear
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "secondBackground")!)
+        
     }
     
     func setModel(model: MovieModel) {
@@ -76,6 +78,13 @@ class DetailViewController: UIViewController {
         rateLabel.text = model?.rateLabel
         ratingLabel.text = model?.ratingLabel
         watchBatton.addButtonSettings()
+    }
+    
+    @IBAction func watchTrailerBttnAction(_ sender: Any) {
+        guard let controller = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "trailerVC") as? TrailerViewController else { return }
+        let movie = model
+        controller.setModel(model: movie!)
+        self.navigationController?.pushViewController(controller, animated: true)
     }
     
     fileprivate func backBttnSettings() {

@@ -134,6 +134,40 @@
             </objects>
             <point key="canvasLocation" x="1604" y="-9.4452773613193415"/>
         </scene>
+        <!--Trailer View Controller-->
+        <scene sceneID="cEt-7w-mxq">
+            <objects>
+                <viewController storyboardIdentifier="trailerVC" id="nyZ-QY-lTe" customClass="TrailerViewController" customModule="CinemaApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xSL-Mu-NdF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fGk-pP-uBY">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="J9w-6g-6U7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fGk-pP-uBY" firstAttribute="trailing" secondItem="J9w-6g-6U7" secondAttribute="trailing" id="C7T-1a-cc7"/>
+                            <constraint firstItem="fGk-pP-uBY" firstAttribute="top" secondItem="J9w-6g-6U7" secondAttribute="top" id="faF-5m-fvN"/>
+                            <constraint firstItem="fGk-pP-uBY" firstAttribute="leading" secondItem="J9w-6g-6U7" secondAttribute="leading" id="ozb-m5-UAw"/>
+                            <constraint firstItem="fGk-pP-uBY" firstAttribute="bottom" secondItem="J9w-6g-6U7" secondAttribute="bottom" id="sju-ZA-aFO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="trailerWebView" destination="fGk-pP-uBY" id="y9e-8B-SdA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x4x-dd-GCt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2314.4000000000001" y="-9.4452773613193415"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="cAf-LQ-88f">
             <objects>

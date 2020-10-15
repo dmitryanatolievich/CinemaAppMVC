@@ -15,6 +15,7 @@
 		FF32703E2512193400E90CB1 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF32703C2512193400E90CB1 /* DetailViewController.swift */; };
 		FF32703F2512193400E90CB1 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF32703D2512193400E90CB1 /* DetailViewController.xib */; };
 		FF3270432512346D00E90CB1 /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3270422512346D00E90CB1 /* MovieModel.swift */; };
+		FF7FFBA9253716B4002AC835 /* TrailerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7FFBA8253716B4002AC835 /* TrailerViewController.swift */; };
 		FF86CCEB2510E78000C3FE9F /* FilmCellSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF86CCEA2510E78000C3FE9F /* FilmCellSettings.swift */; };
 		FFE420DB250BBA620073515C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE420DA250BBA620073515C /* AppDelegate.swift */; };
 		FFE420DD250BBA620073515C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE420DC250BBA620073515C /* SceneDelegate.swift */; };
@@ -22,25 +23,7 @@
 		FFE420E2250BBA620073515C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFE420E0250BBA620073515C /* Main.storyboard */; };
 		FFE420E7250BBA640073515C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFE420E6250BBA640073515C /* Assets.xcassets */; };
 		FFE420EA250BBA640073515C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFE420E8250BBA640073515C /* LaunchScreen.storyboard */; };
-		FFE42100250BBA640073515C /* CinemaAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE420FF250BBA640073515C /* CinemaAppUITests.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		FFE420F1250BBA640073515C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FFE420CF250BBA610073515C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FFE420D6250BBA620073515C;
-			remoteInfo = CinemaApp;
-		};
-		FFE420FC250BBA640073515C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FFE420CF250BBA610073515C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FFE420D6250BBA620073515C;
-			remoteInfo = CinemaApp;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		FF04F4F72520C8130055DBEF /* DataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStorage.swift; sourceTree = "<group>"; };
@@ -51,6 +34,7 @@
 		FF32703C2512193400E90CB1 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		FF32703D2512193400E90CB1 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		FF3270422512346D00E90CB1 /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
+		FF7FFBA8253716B4002AC835 /* TrailerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailerViewController.swift; sourceTree = "<group>"; };
 		FF86CCEA2510E78000C3FE9F /* FilmCellSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmCellSettings.swift; sourceTree = "<group>"; };
 		FFE420D7250BBA620073515C /* CinemaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CinemaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFE420DA250BBA620073515C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -59,29 +43,11 @@
 		FFE420E1250BBA620073515C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FFE420E6250BBA640073515C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FFE420E9250BBA640073515C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		FFE420EB250BBA640073515C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
-		FFE420F0250BBA640073515C /* CinemaAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CinemaAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FFE420FB250BBA640073515C /* CinemaAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CinemaAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FFE420FF250BBA640073515C /* CinemaAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemaAppUITests.swift; sourceTree = "<group>"; };
-		FFE42101250BBA640073515C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFE420EB250BBA640073515C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		FFE420D4250BBA620073515C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FFE420ED250BBA640073515C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FFE420F8250BBA640073515C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -115,6 +81,7 @@
 				FF1AB684250FB64600F7F3AE /* SecondViewController.swift */,
 				FF32703C2512193400E90CB1 /* DetailViewController.swift */,
 				FF32703D2512193400E90CB1 /* DetailViewController.xib */,
+				FF7FFBA8253716B4002AC835 /* TrailerViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -150,7 +117,6 @@
 			children = (
 				FFE420D9250BBA620073515C /* CinemaApp */,
 				FFE420E6250BBA640073515C /* Assets.xcassets */,
-				FFE420FE250BBA640073515C /* CinemaAppUITests */,
 				FFE420D8250BBA620073515C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -159,8 +125,6 @@
 			isa = PBXGroup;
 			children = (
 				FFE420D7250BBA620073515C /* CinemaApp.app */,
-				FFE420F0250BBA640073515C /* CinemaAppTests.xctest */,
-				FFE420FB250BBA640073515C /* CinemaAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -179,15 +143,6 @@
 				FF86CCE425100C4A00C3FE9F /* Cells */,
 			);
 			path = CinemaApp;
-			sourceTree = "<group>";
-		};
-		FFE420FE250BBA640073515C /* CinemaAppUITests */ = {
-			isa = PBXGroup;
-			children = (
-				FFE420FF250BBA640073515C /* CinemaAppUITests.swift */,
-				FFE42101250BBA640073515C /* Info.plist */,
-			);
-			path = CinemaAppUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,42 +165,6 @@
 			productReference = FFE420D7250BBA620073515C /* CinemaApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		FFE420EF250BBA640073515C /* CinemaAppTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FFE42107250BBA640073515C /* Build configuration list for PBXNativeTarget "CinemaAppTests" */;
-			buildPhases = (
-				FFE420EC250BBA640073515C /* Sources */,
-				FFE420ED250BBA640073515C /* Frameworks */,
-				FFE420EE250BBA640073515C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				FFE420F2250BBA640073515C /* PBXTargetDependency */,
-			);
-			name = CinemaAppTests;
-			productName = CinemaAppTests;
-			productReference = FFE420F0250BBA640073515C /* CinemaAppTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		FFE420FA250BBA640073515C /* CinemaAppUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FFE4210A250BBA640073515C /* Build configuration list for PBXNativeTarget "CinemaAppUITests" */;
-			buildPhases = (
-				FFE420F7250BBA640073515C /* Sources */,
-				FFE420F8250BBA640073515C /* Frameworks */,
-				FFE420F9250BBA640073515C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				FFE420FD250BBA640073515C /* PBXTargetDependency */,
-			);
-			name = CinemaAppUITests;
-			productName = CinemaAppUITests;
-			productReference = FFE420FB250BBA640073515C /* CinemaAppUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -253,19 +172,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1170;
-				LastUpgradeCheck = 1170;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Dmitry Anatolievich";
 				TargetAttributes = {
 					FFE420D6250BBA620073515C = {
 						CreatedOnToolsVersion = 11.7;
-					};
-					FFE420EF250BBA640073515C = {
-						CreatedOnToolsVersion = 11.7;
-						TestTargetID = FFE420D6250BBA620073515C;
-					};
-					FFE420FA250BBA640073515C = {
-						CreatedOnToolsVersion = 11.7;
-						TestTargetID = FFE420D6250BBA620073515C;
 					};
 				};
 			};
@@ -283,8 +194,6 @@
 			projectRoot = "";
 			targets = (
 				FFE420D6250BBA620073515C /* CinemaApp */,
-				FFE420EF250BBA640073515C /* CinemaAppTests */,
-				FFE420FA250BBA640073515C /* CinemaAppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -302,20 +211,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FFE420EE250BBA640073515C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FFE420F9250BBA640073515C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -326,6 +221,7 @@
 				FF32703E2512193400E90CB1 /* DetailViewController.swift in Sources */,
 				FF3270432512346D00E90CB1 /* MovieModel.swift in Sources */,
 				FF3270322511F54800E90CB1 /* CollectionViewCell.swift in Sources */,
+				FF7FFBA9253716B4002AC835 /* TrailerViewController.swift in Sources */,
 				FFE420DF250BBA620073515C /* ViewController.swift in Sources */,
 				FF86CCEB2510E78000C3FE9F /* FilmCellSettings.swift in Sources */,
 				FFE420DB250BBA620073515C /* AppDelegate.swift in Sources */,
@@ -336,35 +232,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FFE420EC250BBA640073515C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FFE420F7250BBA640073515C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FFE42100250BBA640073515C /* CinemaAppUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		FFE420F2250BBA640073515C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FFE420D6250BBA620073515C /* CinemaApp */;
-			targetProxy = FFE420F1250BBA640073515C /* PBXContainerItemProxy */;
-		};
-		FFE420FD250BBA640073515C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FFE420D6250BBA620073515C /* CinemaApp */;
-			targetProxy = FFE420FC250BBA640073515C /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		FFE420E0250BBA620073515C /* Main.storyboard */ = {
@@ -412,6 +280,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -472,6 +341,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -536,86 +406,6 @@
 			};
 			name = Release;
 		};
-		FFE42108250BBA640073515C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = CinemaAppTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = company.CinemaAppTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CinemaApp.app/CinemaApp";
-			};
-			name = Debug;
-		};
-		FFE42109250BBA640073515C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = CinemaAppTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = company.CinemaAppTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CinemaApp.app/CinemaApp";
-			};
-			name = Release;
-		};
-		FFE4210B250BBA640073515C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = CinemaAppUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = company.CinemaAppUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = CinemaApp;
-			};
-			name = Debug;
-		};
-		FFE4210C250BBA640073515C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = CinemaAppUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = company.CinemaAppUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = CinemaApp;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -633,24 +423,6 @@
 			buildConfigurations = (
 				FFE42105250BBA640073515C /* Debug */,
 				FFE42106250BBA640073515C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FFE42107250BBA640073515C /* Build configuration list for PBXNativeTarget "CinemaAppTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FFE42108250BBA640073515C /* Debug */,
-				FFE42109250BBA640073515C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FFE4210A250BBA640073515C /* Build configuration list for PBXNativeTarget "CinemaAppUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FFE4210B250BBA640073515C /* Debug */,
-				FFE4210C250BBA640073515C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -31,4 +31,5 @@ struct MovieModel {
     var rightActorIV: String
     var leftActorNameLabel: String
     var rightActorNameLabel: String
+    var trailerUrl: String
 }

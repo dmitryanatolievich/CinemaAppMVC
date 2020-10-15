@@ -7,16 +7,28 @@
 //
 
 import UIKit
-class CollectionViewCell: UICollectionViewCell {
-    
+
+protocol WatchTrailerProtocol {
+    var watchTrailerDidTapped: () -> () { get set }
+}
+
+class CollectionViewCell: UICollectionViewCell, WatchTrailerProtocol{
+    var model: MovieModel?
     @IBOutlet var genreImageView: UIImageView!
     @IBOutlet var filmNameLabelOutlet: UILabel!
     @IBOutlet var starImageViewOutlet: UIImageView!
     @IBOutlet var ratingLabelOutlet: UILabel!
     @IBOutlet var watchButtonOutlet: UIButton!
     
+    var watchTrailerDidTapped: () -> () = {}
+    
     override func awakeFromNib() {
         super.awakeFromNib()
+        watchButtonOutlet.addTarget(self, action: #selector(handleWatchTrailerTap), for: .touchUpInside)
+    }
+    
+    @objc func handleWatchTrailerTap() {
+        self.watchTrailerDidTapped()
     }
     
     func configCellElements() {
